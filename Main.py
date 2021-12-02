@@ -51,6 +51,7 @@ while keep_using_the_calculator:
         result = first_number / second_number
     # Display of the result:
     print(prompt.format(first_number, operator, second_number, result))
+    # Checking if the use would like to continue:
     answer = finish_verification(options=['Yes', 'yes', 'No', 'no'])
     if answer == 'No' or answer == 'no':
         keep_using_the_calculator = False
